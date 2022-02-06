@@ -1,0 +1,88 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "stage",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#variables"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.stage",
+          "match": "\\b(SEQ|END) [A-z_-]*\\b"
+        },
+        {
+          "name": "keyword.control.stage",
+          "match": "\\b(SEQ|END)\\b"
+        },
+        {
+          "name": "keyword.control.stage",
+          "match": "\\."
+        },
+        {
+          "name": "storage.modifier.stage",
+          "match": "\\b(PACE|SMOO|SONG|smoo)\\b"
+        },
+        {
+          "name": "entity.name.function.stage",
+          "match": "\\b(off|on|all|clear)\\b"
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.numeric.stage",
+          "match": "\\b[-]?\\d+\\b"
+        },
+        {
+          "name": "constant.numeric.stage",
+          "match": "\\b(true|false)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.stage",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.stage",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "comments": {
+      "name": "comment.line.stage",
+      "begin": "--",
+      "end": "\n"
+    },
+    "variables": {
+      "patterns": [
+        {
+          "name": "variable.parameter.stage",
+          "match": "(!|\\$)([a-zA-Z0-9_-]+)"
+        },
+        {
+          "name": "support.type.stage",
+          "match": "(!|\\#)([a-zA-Z0-9_-]+)"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.stage"
+}

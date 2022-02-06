@@ -1,0 +1,46 @@
+$big "Jacob under desk"
+$1 "Pluto ceiling 1"
+$2 "Pluto ceiling 2"
+$3 "Pluto ceiling 3"
+
+#al #1896C2
+#rd #ff0000
+#fg #FFFAFF
+#cl #000001
+
+SMOO 0 -- the transition timing
+PACE 4 -- the number of beats per second
+SONG https://open.spotify.com/track/0w5vvxfNoqnF8pDpj5eD1A
+
+
+SEQ init
+clear
+END
+
+SEQ word-hate 15 35 52
+smoo 2
+#rd $big
+..
+#cl $big
+END
+
+SEQ word-self 82
+#al $big
+END
+
+SEQ a-word-sad-enough 102
+#al $1
+END
+SEQ b-word-sad-enough 110
+#al $2
+END
+SEQ c-word-sad-enough 117
+#al $3
+END
+
+-- nine times ~6 second apart
+SEQ kick-drum-beat-a 117 [9x, 10ds]
+smoo 0
+#al $big
+#cl $big
+END

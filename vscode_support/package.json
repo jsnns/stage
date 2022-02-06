@@ -1,0 +1,40 @@
+{
+  "name": "stage",
+  "displayName": "stage",
+  "description": "stage support",
+  "publisher": "workbyjacob",
+  "icon": "assets/img/stageLogo.png",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/jsnns/stage"
+  },
+  "version": "0.0.3",
+  "engines": {
+    "vscode": "^1.42.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "stage",
+        "aliases": [
+          "Stage",
+          "stage"
+        ],
+        "extensions": [
+          ".sg"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "stage",
+        "scopeName": "source.stage",
+        "path": "./syntaxes/stage.tmLanguage.json"
+      }
+    ]
+  }
+}
