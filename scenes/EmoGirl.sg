@@ -1,0 +1,90 @@
+#pink "#aa000a"
+#dim "#aa000a"
+#red "#ff0000"
+#rasdark "#aa2222"
+#raslight "#ff4444"
+#dpink "#880055"
+#hot "#ff00ff"
+#willow "#ff00ff"
+#yellow "#00aaff"
+#dark "#110000"
+#white "#ffffff"
+
+$big "Wave"
+$left "Fireplace down"
+
+$far "Kitchen window"
+
+$right "Couch left down"
+$right "Couch right down"
+
+PACE 4 --pace is lines per second
+SMOO 0 --smoothing is the number of deciseconds to smooth transition
+SONG https://open.spotify.com/track/2AAyBZmMVZSZfgzXRYJOWQ
+
+SEQ init
+all off
+END
+
+SEQ god 5
+#red $big
+END
+
+SEQ strum-hard 12 [6x, 15ds]
+-- wave bounch
+#pink $big
+..
+#dpink $big
+
+-- far bounce 
+#pink $far
+
+-- grad swap
+smoo 2
+#red $left | #pink $right
+smoo 0
+
+-- wave bounch
+#pink $big
+..
+#dpink $big
+
+-- far bounce
+#dpink $far
+
+-- grade sawp
+smoo 2
+#pink $left | #red $right
+smoo 0
+END
+
+SEQ dark 100
+all off
+END
+
+SEQ soft-blur 120 [5x, 20ds]
+smoo 6
+all #rasdark
+...
+all #raslight
+END
+
+SEQ soft-blur-fast 250 [10x, 10ds]
+smoo 3
+all #rasdark
+.
+all #raslight
+END
+
+SEQ big-dick 345
+smoo 0
+all off
+..
+all #dpink
+END
+
+SEQ chrous-A-headbob 355 [6x, 15ds]
+all #dpink
+all #hot
+all #raslight
+END

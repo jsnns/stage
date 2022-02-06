@@ -39,7 +39,7 @@ SEQ c-word-sad-enough 117
 END
 
 -- nine times ~6 second apart
-SEQ kick-drum-beat-a 117 [9x, 10ds]
+SEQ kick-drum-beat-a 117 [8x, 1ds]
 smoo 0
 #al $big
 #cl $big
