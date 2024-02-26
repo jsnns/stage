@@ -1,8 +1,13 @@
 import json
 import logging
 from time import perf_counter, perf_counter_ns
-from color import Color
+from typing import TYPE_CHECKING, List
+
 from bridge import blitz
+from color import Color
+
+if TYPE_CHECKING:
+    from light_modifier import AbstractLightModifier
 
 
 class Light:
@@ -31,3 +36,26 @@ class Light:
 
     def smoo(self, smoo: int = 0):
         self._smoo = smoo
+
+
+class Stage:
+    def __init__(self):
+        self.lights: List[Light] = []
+
+    def add(self, light: Light):
+        self.lights.append(light)
+
+    def apply(self, modifier: "AbstractLightModifier"):
+        from concurrent.futures import ThreadPoolExecutor
+
+        with ThreadPoolExecutor() as executor:
+            executor.map(
+                lambda light: modifier.modify(
+                    light[1], index=light[0], total=len(self.lights)
+                ),
+                enumerate(self.lights),
+            )
+
+    def __repr__(self) -> str:
+        lights = ", ".join([light.name for light in self.lights])
+        return f"<Stage: {lights}>"

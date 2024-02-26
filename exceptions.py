@@ -1,0 +1,2 @@
+class TimecodeError(Exception):
+    pass

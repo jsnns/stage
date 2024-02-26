@@ -1,0 +1,26 @@
+#yellow "#FFD700"
+#blue "#0000FF"
+#red "#FF0000"
+#green "#00FF00"
+#white "#FFFFFF
+#dark "#000001"
+#orange "#FFA500"
+#indigo "#4B0082"
+#violet "#9400D3"
+
+$big "Sink"
+
+$far "Window Lamp M"
+$far "Window Lamp T"
+$far "Window Lamp B"
+
+$left "Couch L"
+$right "Couch R"
+
+SONG https://open.spotify.com/track/0zlaa4AmbFE7MVDijsyD9Q
+
+at 1s
+- flash $all #white 2s
+
+at 10s
+- sparkle $all #white 10s

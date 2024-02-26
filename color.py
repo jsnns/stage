@@ -2,8 +2,9 @@ import colorsys
 
 
 class Color:
-    def __init__(self, hex: str = None):
+    def __init__(self, hex: str = None, xy: list = None):
         self.hex = hex
+        self._xy = xy
 
     def xy(self):
         """conversion of RGB colors to CIE1931 XY colors
@@ -58,3 +59,6 @@ class Color:
         return tuple(
             int(self.hex[i : i + 2], 16) / 255.0 for i in (1, 3, 5)
         )  # skip '#'
+
+    def __repr__(self) -> str:
+        return f"<Color: {self.hex}>"

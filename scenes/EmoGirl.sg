@@ -10,13 +10,14 @@
 #dark "#110000"
 #white "#ffffff"
 
-$big "Wave"
-$left "Fireplace down"
+$big "Sink"
+$left "Couch L"
 
-$far "Kitchen window"
+$far "Window Lamp M"
+$far "Window Lamp T"
+$far "Window Lamp B"
 
-$right "Couch left down"
-$right "Couch right down"
+$right "Couch R"
 
 PACE 4 --pace is lines per second
 SMOO 0 --smoothing is the number of deciseconds to smooth transition

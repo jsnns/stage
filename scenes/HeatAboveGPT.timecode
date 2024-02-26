@@ -1,0 +1,208 @@
+#blue "#0000FF"
+#red "#FF0000"
+#orange "#FFA500"
+#green "#00FF00"
+#white "#FFFFFF"
+#dark "#000001"
+#yellow "#FFD700"
+#purple "#800080"
+#indigo "#4B0082"
+#violet "#EE82EE"
+
+$stage "Sink"
+$audience "Sink"
+$left "Couch L"
+$right "Couch R"
+$center "Window Lamp M"
+$center "Window Lamp T"
+$center "Window Lamp B"
+
+$big "Sink"
+
+$far "Window Lamp M"
+$far "Window Lamp T"
+$far "Window Lamp B"
+
+$left "Couch L"
+$right "Couch R"
+
+// Initial fade in
+at 1s
+- fade $big #white 8s
+
+// Early transitions
+at 9s
+- set $far #yellow
+
+at 30s
+- dark $all
+
+// Adding dynamic color changes
+at 35s
+- fade $all #white 6s
+
+at 41s
+- fade $all #white 0.5s
+
+// Color cycles and transitions
+at 41.5s
+- fade $big #blue 1s
+- fade $far #green 1s
+- fade $left #red 1s
+- fade $right #yellow 1s
+
+at 42.5s
+- fade $all #white 1s
+
+at 43.5s
+- fade $far #blue 1s
+- fade $big #green 1s
+- fade $right #red 1s
+- fade $left #yellow 1s
+
+at 44.5s
+- fade $all #white 1s
+
+// Expanded rapid color shifts section from 45.5s to 67.5s
+at 45.5s
+- fade $big #red 1s
+- fade $far #orange 1s
+- fade $left #yellow 1s
+- fade $right #green 1s
+
+at 46.5s
+- fade $big #blue 1s
+- fade $far #indigo 1s
+- fade $left #violet 1s
+- fade $right #red 1s
+
+at 47.5s
+- fade $all #orange 1s
+
+at 48.5s
+- fade $all #yellow 1s
+
+at 49.5s
+- fade $all #green 1s
+
+at 50.5s
+- fade $all #blue 1s
+
+at 51.5s
+- fade $all #indigo 1s
+
+at 52.5s
+- fade $all #violet 1s
+
+at 53.5s
+- fade $big #red 1s
+- fade $far #orange 1s
+- fade $left #yellow 1s
+- fade $right #green 1s
+
+at 54.5s
+- fade $big #blue 1s
+- fade $far #indigo 1s
+- fade $left #violet 1s
+- fade $right #red 1s
+
+at 55.5s
+- fade $all #orange 1s
+
+at 56.5s
+- fade $all #yellow 1s
+
+at 57.5s
+- fade $all #green 1s
+
+at 58.5s
+- fade $all #blue 1s
+
+at 59.5s
+- fade $all #indigo 1s
+
+at 60.5s
+- fade $all #violet 1s
+
+at 61.5s
+- fade $big #red 1s
+- fade $far #orange 1s
+- fade $left #yellow 1s
+- fade $right #green 1s
+
+at 62.5s
+- fade $big #blue 1s
+- fade $far #indigo 1s
+- fade $left #violet 1s
+- fade $right #red 1s
+
+at 63.5s
+- fade $all #orange 1s
+
+at 64.5s
+- fade $all #yellow 1s
+
+at 65.5s
+- fade $all #green 1s
+
+at 66.5s
+- fade $all #blue 1s
+
+at 67.5s
+- fade $all #indigo 1s
+
+
+// Continuing with the provided script from 69s onwards, adding a few more dynamic elements
+at 69s
+- fade $stage #blue 5s
+
+at 74s
+- fade $left #orange 5s
+- fade $right #orange 5s
+
+at 79s
+- fade $center #red 10s
+
+at 90s
+- set $audience #yellow
+
+at 130s
+- fade $stage #green 5s
+
+// Flashing to emphasize rhythm
+at 166s
+- flash $left #purple 1s
+at 168s
+- flash $right #purple 1s
+at 170s
+- flash $left #purple 1s
+at 172s
+- flash $right #purple 1s
+at 174s
+- flash $left #purple 1s
+at 176s
+- flash $right #purple 1s
+
+at 180s
+- fade $center #white 5s
+
+at 206s
+- set $stage #dark
+
+// Final sparkle to conclude
+at 236s
+- sparkle $audience #yellow 10s
+
+// Intense final flashing sequence for climax
+at 274s
+- flash $all #white 1s
+at 275s
+- flash $all #white 1s
+at 276s
+- flash $all #white 1s
+at 277s
+- flash $all #white 1s
+at 278s
+- flash $all #white 1s
+at 279s
+- flash $all #white 1s

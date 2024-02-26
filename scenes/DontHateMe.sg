@@ -1,7 +1,7 @@
-$big "Jacob under desk"
-$1 "Pluto ceiling 1"
-$2 "Pluto ceiling 2"
-$3 "Pluto ceiling 3"
+$big "Sink"
+$1 "Window Lamp M"
+$2 "Window Lamp T"
+$3 "Window Lamp B"
 
 #al #1896C2
 #rd #ff0000
@@ -39,7 +39,7 @@ SEQ c-word-sad-enough 117
 END
 
 -- nine times ~6 second apart
-SEQ kick-drum-beat-a 117 [8x, 1ds]
+SEQ kick-drum-beat-a 117 [15x, 1ds]
 smoo 0
 #al $big
 #cl $big

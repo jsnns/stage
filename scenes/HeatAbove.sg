@@ -1,0 +1,31 @@
+#yellow "#FFD700"
+#blue "#0000FF"
+#red "#FF0000"
+#green "#00FF00"
+#white "#FFFFFF"
+
+$big "Sink"
+
+$far "Window Lamp M"
+$far "Window Lamp T"
+$far "Window Lamp B"
+
+$left "Couch L"
+$right "Couch R"
+
+SMOO 0
+PACE 2 -- the number of beats per second
+SONG https://open.spotify.com/track/0zlaa4AmbFE7MVDijsyD9Q
+
+------------------------------
+
+SEQ init
+all off
+END
+
+SEQ intro-part-one 10
+smoo 80
+all #white hold
+smoo 20
+#blue $big
+END
