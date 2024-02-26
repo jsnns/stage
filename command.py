@@ -48,6 +48,9 @@ class Command:
             elif token.endswith("s"):
                 durations.append(float(token.strip("s")))
 
+        if not stages:
+            stages.append("$all")
+
         if command is None:
             raise TimecodeError(f"no command found: {line}")
 

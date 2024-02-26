@@ -9,7 +9,7 @@ from spotify import pause, playback, reset
 
 def main():
     DELAY_MS = 0
-    act = Act("HeatAboveGPT")
+    act = Act("HeatAbove")
     act.start()
 
     print("")

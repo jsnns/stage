@@ -9,6 +9,8 @@
 #violet "#9400D3"
 
 $big "Sink"
+$big "Wave"
+
 
 $far "Window Lamp M"
 $far "Window Lamp T"
@@ -20,19 +22,19 @@ $right "Couch R"
 SONG https://open.spotify.com/track/0zlaa4AmbFE7MVDijsyD9Q
 
 at 1s
-- fade $big #white 8s
+- fade #white 15s
 
-at 9s
-- set $far #yellow
+at 16s
+- sparkle #white 15s
 
-at 30s
+at 31s
 - dark $all
 
 at 35s
-- fade $all #white 6s
+- fade #white 6s
 
 at 41s
-- fade $all #white 0.5s
+- fade #white 0.5s
 
 at 41.5s
 - fade $big #blue 1s
@@ -41,7 +43,7 @@ at 41.5s
 - fade $right #yellow 1s
 
 at 42.5s
-- fade $all #white 1s
+- fade #white 1s 
 
 at 43.5s
 - fade $far #blue 1s
@@ -50,7 +52,7 @@ at 43.5s
 - fade $left #yellow 1s
 
 at 44.5s
-- fade $all #white 1s
+- fade #white 1s
 
 at 45.5s
 - fade $big #red 1s
@@ -65,22 +67,22 @@ at 46.5s
 - fade $right #red 1s
 
 at 47.5s
-- fade $all #orange 1s
+- fade #orange 1s
 
 at 48.5s
-- fade $all #yellow 1s
+- fade #yellow 1s
 
 at 49.5s
-- fade $all #green 1s
+- fade #green 1s
 
 at 50.5s
-- fade $all #blue 1s
+- fade #blue 1s
 
 at 51.5s
-- fade $all #indigo 1s
+- fade #indigo 1s
 
 at 52.5s
-- fade $all #violet 1s
+- fade #violet 1s
 
 at 53.5s
 - fade $big #red 1s
@@ -95,55 +97,16 @@ at 54.5s
 - fade $right #red 1s
 
 at 55.5s
-- fade $all #orange 1s
+- dark
 
-at 56.5s
-- fade $all #yellow 1s
-
-at 57.5s
-- fade $all #green 1s
-
-at 58.5s
-- fade $all #blue 1s
-
-at 59.5s
-- fade $all #indigo 1s
-
-at 60.5s
-- fade $all #violet 1s
-
-at 61.5s
-- fade $big #red 1s
-- fade $far #orange 1s
-- fade $left #yellow 1s
-- fade $right #green 1s
-
-at 62.5s
-- fade $big #blue 1s
-- fade $far #indigo 1s
-- fade $left #violet 1s
-- fade $right #red 1s
-
-at 63.5s
-- fade $all #orange 1s
-
-at 64.5s
-- fade $all #yellow 1s
-
-at 65.5s
-- fade $all #green 1s
-
-at 66.5s
-- fade $all #blue 1s
-
-at 67.5s
-- fade $all #indigo 1s
+at 58s
+- fade #white 10s
 
 at 68.5s
-- fade $all #violet 1s
+- fade #violet 1s
 
 at 70s
-- set $all #white
+- set #white
 
 at 70.5s
 - fade $big #red 1s
